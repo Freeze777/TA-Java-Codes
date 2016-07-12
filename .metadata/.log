@@ -1,0 +1,132 @@
+!SESSION 2016-07-13 01:37:41.943 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/prakash/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data /Users/prakash/Project/JavaTA/TA-Java-Codes -product org.eclipse.epp.package.java.product -keyring /Users/prakash/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.jst.server.generic.tests 4 0 2016-07-13 01:37:44.270
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.server.generic.tests [732]
+  Unresolved requirement: Require-Bundle: org.junit; bundle-version="[3.8.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.tests 4 0 2016-07-13 01:37:44.287
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.tests [798]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.tests
+    -> Bundle-SymbolicName: org.eclipse.wst.common.tests; bundle-version="1.2.200.v201004110600"; singleton:="true"
+       org.eclipse.wst.common.tests [828]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.tests.collector; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.tests.collector; bundle-version="1.1.0"; singleton:="true"
+              org.eclipse.wst.common.tests.collector [829]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="[3.8.2,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jst.ws.tests.performance 4 0 2016-07-13 01:37:44.302
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.ws.tests.performance [799]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.ws.tests
+    -> Bundle-SymbolicName: org.eclipse.jst.ws.tests; bundle-version="1.0.303.v201004211805"; singleton:="true"
+       org.eclipse.jst.ws.tests [798]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.tests
+           -> Bundle-SymbolicName: org.eclipse.wst.common.tests; bundle-version="1.2.200.v201004110600"; singleton:="true"
+              org.eclipse.wst.common.tests [828]
+                Unresolved requirement: Require-Bundle: org.eclipse.wst.common.tests.collector; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.wst.common.tests.collector; bundle-version="1.1.0"; singleton:="true"
+                     org.eclipse.wst.common.tests.collector [829]
+                       Unresolved requirement: Require-Bundle: org.junit; bundle-version="[3.8.2,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.tests 4 0 2016-07-13 01:37:44.309
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.tests [828]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.tests.collector; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.wst.common.tests.collector; bundle-version="1.1.0"; singleton:="true"
+       org.eclipse.wst.common.tests.collector [829]
+         Unresolved requirement: Require-Bundle: org.junit; bundle-version="[3.8.2,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.tests.collector 4 0 2016-07-13 01:37:44.317
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.tests.collector [829]
+  Unresolved requirement: Require-Bundle: org.junit; bundle-version="[3.8.2,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.wst.common.tests.ui 4 0 2016-07-13 01:37:44.332
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.common.tests.ui [830]
+  Unresolved requirement: Require-Bundle: org.eclipse.wst.common.tests
+    -> Bundle-SymbolicName: org.eclipse.wst.common.tests; bundle-version="1.2.200.v201004110600"; singleton:="true"
+       org.eclipse.wst.common.tests [828]
+         Unresolved requirement: Require-Bundle: org.eclipse.wst.common.tests.collector; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.wst.common.tests.collector; bundle-version="1.1.0"; singleton:="true"
+              org.eclipse.wst.common.tests.collector [829]
+                Unresolved requirement: Require-Bundle: org.junit; bundle-version="[3.8.2,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2016-07-13 01:37:50.803
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 0 2016-07-13 01:37:59.216
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.jst.ws.jaxws.utils' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-07-13 01:39:40.660
+!MESSAGE Version 5.0 of project facet dvt_f7 does not exist. It is used in plugin org.eclipse.wst.common.project.facet.core.tests.

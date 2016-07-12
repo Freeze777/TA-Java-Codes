@@ -1,0 +1,9 @@
+package snippets;
+
+public class PuzzlerThree 
+{
+	public static void main(String ...args)
+	{
+		byte b = 125; 
+	}
+}
