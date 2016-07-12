@@ -1,8 +1,8 @@
 package snippets;
 
-public class StringBuilderVsString {
+public class FastnessStringBuilderVsString {
 	public static void main(String[] args) {
-		int n=100000;
+		int n=10000;
 		long s = System.currentTimeMillis();
 		for (int i = 0; i < n; i++) {
 			System.out.print(i);

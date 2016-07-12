@@ -17,13 +17,13 @@ public class ShortCircuitEvalBoolExpr {
 		System.out.println(i);
 
 		int a = 5, b = 0;
-		//evaluation from left to right
+		//evaluation from left to right... 
 		if ((a % b == 0) && (b != 0)) {
 			System.out.println("Jus a print statement when True");
 		} else {
 			System.out.println("Jus a print statement when False");
 		}
-		//correction
+		//correction---- used as gaurds
 		if ((b != 0) && (a % b == 0)) {
 			System.out.println("Jus a print statement when True");
 		} else {

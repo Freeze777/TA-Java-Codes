@@ -3,42 +3,45 @@ package day1;
 public class PrettyPrint2 {
 	public static void main(String[] args) {
 		int n = 10;
-		prettyPretty_method2(n);
+		prettyPretty_method1(n);
 	}
 
-	// two loops
+	// two loops -- O(n^2)
 	public static void prettyPretty_method1(int n) {
 		int lineWidth = 2 * n - 1;
 		StringBuilder prefix = new StringBuilder();
+		StringBuilder suffix = new StringBuilder();
 
 		for (int line = 0; line < n; line++) {
 			int numDigits = 2 * line + 1;
 			int numSpaces = lineWidth - numDigits;
 			for (int i = 0; i < numSpaces / 2; i++)
 				System.out.print(" ");
-			System.out.print(prefix + "" + line + prefix.reverse());
+			System.out.print(prefix + ("" + line) + suffix);
 			for (int i = 0; i < numSpaces / 2; i++)
 				System.out.print(" ");
-			prefix.reverse();
 			prefix.append(line);
+			suffix.insert(0, line);
 			System.out.println();
 		}
 	}
 
-	//one loop
+	// one loop -- O(n^2)??? insert()!!!!
 	public static void prettyPretty_method2(int n) {
 		int lineWidth = 2 * n - 1;
+
 		StringBuilder prefix = new StringBuilder();
+		StringBuilder suffix = new StringBuilder();
 
 		for (int line = 0; line < n; line++) {
 			int numDigits = 2 * line + 1;
 			int numSpaces = lineWidth - numDigits;
 			System.out.format("%" + ((numSpaces / 2) + (numDigits)) + "s",
-					prefix + "" + line + prefix.reverse());
+					prefix + "" + line + suffix);
 			if (numSpaces != 0)
 				System.out.format("%" + (numSpaces / 2) + "s", " ");
-			prefix.reverse();
 			prefix.append(line);
+			suffix.insert(0, line);
 			System.out.println();
 		}
 
