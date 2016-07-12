@@ -2,10 +2,10 @@ package snippets;
 
 public class MutableImmutable {
 	public static void main(String[] args) {
-		String in = "afjkshdgf";
+		String in = "Hello";
 		func(in);
 		System.out.println(in);
-		StringBuilder sb = new StringBuilder("afjkshdgf");
+		StringBuilder sb = new StringBuilder("Hello");
 		func(sb);
 		System.out.println(sb);
 
@@ -13,11 +13,11 @@ public class MutableImmutable {
 		// Read about difference of StringBuilder and StringBuffer..!!
 	}
 
-	private static void func(String s) {
-		s = s + "sgdfedhf";
+	private static void func(String in) {
+		in = in + "World";
 	}
 
 	private static void func(StringBuilder s) {
-		s = s.append("sgdfedhf");
+		s = s.append("World");
 	}
 }
