@@ -8,6 +8,9 @@ public class HelloWord {
 	// why static??
 	// what is String[] args for???
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
+		String s;// ??
+		s=new String("Hello World!");// ??
+		//s="Hello World!"; // little different from the above
+		System.out.println(s);
 	}
 }
