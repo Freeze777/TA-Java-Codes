@@ -1,4 +1,4 @@
-package day1;
+package assignment1;
 
 public class PrettyPrint2 {
 	public static void main(String[] args) {
