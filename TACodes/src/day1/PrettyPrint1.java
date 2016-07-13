@@ -32,6 +32,18 @@ public class PrettyPrint1 {
 		}
 
 	}
+	// O(n)-- fastest and best
+	// Number theory involved!!
+	public static void prettyPrint_method3(int n) {
+		// TODO Auto-generated method stub
+		System.out.println(0);
+		for (int j = 1; j < n; j++) {
+			long temp = (long) (Math.pow(10, j) - 1);
+			temp /= 9;
+			temp = temp * temp;
+			System.out.println("0" + temp + "0");
+		}
 
+	}
 
 }
