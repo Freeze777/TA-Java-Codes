@@ -1,5 +1,5 @@
 git add *
 git rm -r --cached TACodes/bin
-git rm -r --cached TACodes/.metadata
+git rm -r --cached .metadata
 git commit -a
 git push https://github.com/Freeze777/TA-Java-Codes.git

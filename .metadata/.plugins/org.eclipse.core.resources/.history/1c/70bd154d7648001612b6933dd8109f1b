@@ -1,9 +1,0 @@
-package snippets;
-
-public class PuzzlerThree 
-{
-	public static void main(String ...args)
-	{
-		System.out.println(x);
-	}
-}
