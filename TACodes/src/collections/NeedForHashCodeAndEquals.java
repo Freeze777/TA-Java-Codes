@@ -25,7 +25,7 @@ class A {
 
 }
 
-public class NeedForHaschCode {
+public class NeedForHashCodeAndEquals {
 	public static void main(String[] args) {
 		Set<A> s = new HashSet<A>();
 		s.add(new A(5, 6));
