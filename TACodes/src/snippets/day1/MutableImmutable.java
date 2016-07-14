@@ -14,7 +14,7 @@ public class MutableImmutable {
 	}
 
 	private static void func(String in) {
-		in = in + "World";
+		in.concat("World");
 	}
 
 	private static void func(StringBuilder s) {
