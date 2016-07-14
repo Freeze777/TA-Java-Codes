@@ -40,7 +40,7 @@ public class Practice1 {
 			// String input = sc.next(); // this is wrong thing to use here??
 			// why???
 			String input = sc.nextLine();
-			System.out.println(input);
+			//System.out.println(input);
 			System.out.println(isPanagram(input.toLowerCase()) ? "YES" : "NO");
 
 			tst--;
