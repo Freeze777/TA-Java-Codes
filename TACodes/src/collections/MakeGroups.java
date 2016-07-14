@@ -1,3 +1,4 @@
+package collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -24,10 +25,10 @@ public class MakeGroups {
 			}
 			groups.put(++groupID, group);
 		}
-		for(Integer key:groups.keySet()){
-			System.out.println(key+":"+groups.get(key));	
+		for (Integer key : groups.keySet()) {
+			System.out.println(key + ":" + groups.get(key));
 		}
-		
+
 	}
 
 }
