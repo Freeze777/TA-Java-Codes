@@ -1,6 +1,5 @@
 package snippets;
 
-import java.util.Scanner;
 
 public class ArithematicExpressionEval {
 	public static void main(String[] args) {
