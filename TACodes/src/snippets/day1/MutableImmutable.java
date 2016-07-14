@@ -18,6 +18,6 @@ public class MutableImmutable {
 	}
 
 	private static void func(StringBuilder s) {
-		s = s.append("World");
+		s.append("World");
 	}
 }

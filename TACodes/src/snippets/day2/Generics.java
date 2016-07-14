@@ -1,4 +1,4 @@
-package snippets;
+package snippets.day2;
 
 class Node<T> {
 	private T data; // better than the Object version..!!

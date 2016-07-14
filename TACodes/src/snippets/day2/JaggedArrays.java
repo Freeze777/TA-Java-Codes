@@ -1,4 +1,4 @@
-package snippets;
+package snippets.day2;
 
 public class JaggedArrays {
 	public static void main(String[] args) {

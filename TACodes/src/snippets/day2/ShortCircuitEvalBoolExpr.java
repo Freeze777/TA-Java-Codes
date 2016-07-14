@@ -1,4 +1,4 @@
-package snippets;
+package snippets.day2;
 
 public class ShortCircuitEvalBoolExpr {
 	public static boolean func(int i) {
