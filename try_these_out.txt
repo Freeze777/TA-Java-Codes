@@ -1,0 +1,9 @@
+https://www.hackerrank.com/challenges/pangrams
+
+https://www.hackerrank.com/challenges/anagram
+
+https://www.hackerrank.com/challenges/making-anagrams
+
+https://www.hackerrank.com/challenges/extra-long-factorials
+
+https://www.hackerrank.com/challenges/matrix-rotation-algo
