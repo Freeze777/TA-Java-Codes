@@ -4,8 +4,9 @@ public class WithDrawal extends Transaction {
 
 	@Override
 	public boolean executeTransaction() {
-		System.out.println("executing withDrawal transaction");
+		double amount = Math.random() * 10000.0;
+		System.out.println("Withdrew " + amount);
 		return true;
-		}
+	}
 
 }

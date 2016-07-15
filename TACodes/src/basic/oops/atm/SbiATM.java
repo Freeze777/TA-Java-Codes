@@ -14,35 +14,44 @@ public class SbiATM implements ATM {
 		this.address = address;
 	}
 
-	public boolean makeTransactions() {
-		int num = ((int) (Math.random() * 1000)) % 3;
-		Transaction tr = null;
-		// RTP in action..!!!!!!!
-		switch (num) {
-		case 0:
-			tr = new Deposit();
-			break;
-		case 1:
-			tr = new WithDrawal();
-			break;
-		case 2:
-			tr = new BalanceEnquiry();
-			break;
+	public boolean authenticateUser() {
+		double d = Math.random();
+		return (d < 0.8);// (80% time authentication succeeds..!)
+	}
 
+	public String makeTransactions() {
+		if (authenticateUser()) {
+			int num = ((int) (Math.random() * 1000)) % 3;
+			Transaction tr = null;
+			// RTP in action..!!!!!!!
+			switch (num) {
+			case 0:
+				tr = new Deposit();
+				break;
+			case 1:
+				tr = new WithDrawal();
+				break;
+			case 2:
+				tr = new BalanceEnquiry();
+				break;
+
+			}
+			return tr.executeTransaction()?TRANSACTION_COMPLETED:TRANSACTION_FAILED;
 		}
-		return tr.executeTransaction();
-
+		return AUTHENTICATION_FAILED;
 	}
 
 	public String otherServices() {
-		double d = Math.random();
-		return (d >= 0.5) ? "Service Request Accepted"
-				: "Service Request Failed";
+		if (authenticateUser()) {
+			double d = Math.random();
+			return (d >= 0.5) ? REQUEST_COMPLETED:REQUEST_FAILED;
+		}
+		return AUTHENTICATION_FAILED;
 	}
-	
+
 	public void servicesForSBIUsersOnly() {
 		System.out.println("These are only available for SBI users");
 
-	}	
-	
+	}
+
 }

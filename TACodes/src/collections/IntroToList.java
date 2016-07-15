@@ -2,16 +2,14 @@ package collections;
 
 import java.util.LinkedList;
 import java.util.List;
-
+//List interface extends collection interface.. i.e it has all the declaration of collection too
 //List Interface--- how it looks like??
 /* 
  * A few handy methods declaration to remember:
  * void add(int index, Object obj);
  * Object get(int index); 
  * int indexOf(Object obj);
- * ListIterator listIterator( );
  * Object remove(int index);
- * int size();
  *  
  */
 public class IntroToList {
@@ -22,7 +20,7 @@ public class IntroToList {
 	 */
 	public static void main(String[] args) {
 
-		// why do we need a List<>????
+		// why/when do we need a List<>????
 
 		// List<Integer> al = new ArrayList<Integer>();
 		List<Integer> al = new LinkedList<Integer>();

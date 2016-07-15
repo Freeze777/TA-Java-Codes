@@ -4,7 +4,8 @@ public class BalanceEnquiry extends Transaction {
 
 	@Override
 	public boolean executeTransaction() {
-		System.out.println("executing balance enquiry transaction");
+		double amount = Math.random() * 10000.0;
+		System.out.println("Your Balance is Rs "+amount);
 		return true;
 	}
 
