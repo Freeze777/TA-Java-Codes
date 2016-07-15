@@ -6,7 +6,8 @@ abstract class Animal {
 	 * Cant be instantiated
 	 * can we have anymore instance variables??
 	 * Yes you can..!!
-	 * But cant initialise them using a constructor..!!
+	 * Abstract classes can have constructor..!!subclasses uses this constructor to initialise the base class.
+	 * But we cant instantiate an abstract class object..!!
 	 * */
 
 	
