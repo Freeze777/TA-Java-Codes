@@ -18,6 +18,6 @@ public class IntroToCollection {
 			int size();
 		*
 		*/
-
+		//There is something called Collections class too...!!! dun get confused.!
 	}
 }
