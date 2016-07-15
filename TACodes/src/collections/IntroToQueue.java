@@ -2,8 +2,9 @@ package collections;
 
 import java.util.*;
 
-/*
- Handy function declarations in Queue Interface:
+/* Queue extends collection interface , i.e it has all the declaration of collection too
+ * 
+ Handy function declarations in Queue Interface: 
  boolean add(E e);
  E element();
  E peek();

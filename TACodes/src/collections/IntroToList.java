@@ -25,7 +25,7 @@ public class IntroToList {
 		// List<Integer> al = new ArrayList<Integer>();
 		List<Integer> al = new LinkedList<Integer>();
 		//Can we access all the functions defined in ArrayList using List handle?? 
-		// Does the output change when we change the implementation??
+		// Does the following output change when we change the implementation??
 		al.add(8);
 		al.add(9);
 		al.add(1);
@@ -39,11 +39,14 @@ public class IntroToList {
 		System.out.println("Index of -20: " + al.indexOf(-20));
 		
 		// time complexities associated with AL and LL impl????
-		// get()???add()??add(index,obj)??remove(index)??
-		// LinkedList can proceed from end on back depending on which is closer
+		// get(index)??--- O(1) AL ?? LL??
+		// add()??---- O(1) LL?? AL??? table doubling??
+		// How does array list expand?? 50% i.e 1.5x ?? check grow() function in ArrayList class..!!
+		// add(index,obj)??remove(index)?? ---- shifts in AL, find index in LL
+		// LinkedList can proceed from begin or end
 		// Random access with arraylist..!
 		// when to use LL over a AL???
-		// How does array list expand?? 50% i.e 1.5x ?? check grow() function in ArrayList class..!!
+		
 		
 		/*
 		 * One more implementation : Vector No one uses it?? why??
