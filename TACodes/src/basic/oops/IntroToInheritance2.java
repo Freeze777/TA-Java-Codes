@@ -1,7 +1,7 @@
 package basic.oops;
 
 abstract class Animal {
-	private String species;
+	private String name;
 	/* Animal has become an abstract concept
 	 * Cant be instantiated
 	 * can we have anymore instance variables??
@@ -9,14 +9,18 @@ abstract class Animal {
 	 * But cant initialise them using a constructor..!!
 	 * */
 
-	public String getSpecies() {
-		return species;
+	
+	abstract public void makeSomeNoise();// most important use of abstract class
+
+
+	public String getName() {
+		return name;
 	}
 
-	public void setSpecies(String species) {
-		this.species = species;
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	abstract void makeSomeNoise();// most important use of abstract class
 }
 /*
  * Wot is the differnce between Interface and Abstract classes..!!!
@@ -24,9 +28,12 @@ abstract class Animal {
  * */
 
 class Dog extends Animal {
+	void dogSpecificFunction(){
+		System.out.println("I am man's best friend..!!");
+	}
 	
 	@Override
-	void makeSomeNoise() {
+	public void makeSomeNoise() {
 		System.out.println("Bow Bow Bow");
 		
 	}
@@ -34,9 +41,11 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
-
+	void catSpecificFunction(){
+		System.out.println("I have an attitude problem..!!");
+	}
 	@Override
-	void makeSomeNoise() {
+	public void makeSomeNoise() {
 		System.out.println("Meow Meow Meow");
 	}
 
@@ -46,6 +55,21 @@ class Cat extends Animal {
 
 public class IntroToInheritance2 {
 	public static void main(String[] args) {
+		Cat tom=new Cat();
+		tom.setName("Tom");
+		tom.makeSomeNoise();
+		tom.catSpecificFunction();
+		
+		Dog scooby=new Dog();
+		scooby.setName("Scooby");
+		scooby.makeSomeNoise();
+		scooby.dogSpecificFunction();
+		
+		Animal a=scooby;
+		/*which of these will work????*/
+		//a.makeSomeNoise();
+		//a.dogSpecificFunction();
+		//a.catSpecificFunction();
 
 	}
 }
