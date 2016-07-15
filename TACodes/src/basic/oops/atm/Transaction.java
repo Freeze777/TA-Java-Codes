@@ -1,6 +1,6 @@
 package basic.oops.atm;
 
 public abstract class Transaction {
-	protected int transactionID;
+	protected long transactionID;
 	abstract public boolean executeTransaction();
 }
