@@ -7,3 +7,5 @@ https://www.hackerrank.com/challenges/making-anagrams
 https://www.hackerrank.com/challenges/extra-long-factorials
 
 https://www.hackerrank.com/challenges/matrix-rotation-algo
+
+https://www.hackerrank.com/challenges/jesse-and-cookies
