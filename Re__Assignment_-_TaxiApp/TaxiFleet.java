@@ -36,8 +36,8 @@ public class TaxiFleet {
 		for(int i=0;i<num;i++) {
 			Taxi t = new Taxi();
 			taxis.add(t);
-				t.setLocation(new Location((int)(Math.random()*1000), 
-						(int)(Math.random()*1000)));
+			t.setLocation(new Location((int)(Math.random()*1000), 
+					(int)(Math.random()*1000)));
 		}
 		animateThread = new Thread(){
 			public void run() {
