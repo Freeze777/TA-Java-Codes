@@ -23,7 +23,10 @@ public class Taxi {
 	public void setLocation(Location loc){
 		this.loc.setPosition(loc.getX(), loc.getY());
 	}
+	@Override
 	public String toString() {
-		return "Taxi ID: " + taxiId + " is busy: " + isBusy + " Position: " + loc.toString();
+		return "Taxi [taxiId=" + taxiId + ", loc=" + loc + ", isBusy=" + isBusy
+				+ "]";
 	}
+	
 }
