@@ -1,5 +1,8 @@
 package taxiservice;
-
+/*@Author : Prof. Srikanth
+@Tested : Freeze
+2 bugs fixed
+*/
 public class Taxi {
 	private int taxiId;
 	private Location loc;

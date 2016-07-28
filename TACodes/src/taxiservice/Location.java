@@ -1,5 +1,7 @@
 package taxiservice;
-
+/*@Author : Prof. Srikanth
+  @Tested : Freeze
+*/
 public class Location {
 	private int x, y;
 	public Location(int xa, int ya) {
